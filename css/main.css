@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 500px;
+    width: 350px;
+    background-color: lightgrey;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    padding-top: 3px;
+}
+
+.display_part {
+    background-color: darkblue;
+    position: relative;
+    height: 130px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.input_value {
+    position: absolute;
+    bottom: 5px;
+    width: 94%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 24px;
+  }
+
+  .name {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 28px;
+      color: white;
+      margin: 8px 0;
+      /* box-sizing: border-box; */
+  }
+
+  .button_part div {
+      border-radius: 5px;
+      color: navy;
+      /* height: 40px; */
+      text-align: center;
+      /* color: #fff; */
+      font-size: 25px;
+      padding: 7px;
+      border: 1px solid black;
+      box-shadow: 5px 10px 18px #888888;
+      cursor: pointer;   
+  }
+
+  .button_part div:hover {
+      background-color: aqua;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  span#add {
+      position: relative;
+      top: 25px; 
+      /* padding: 25px; */
+  }
+
+  span#circle {
+    font-size: 10px;
+  }
+
+  div.yellow {
+    background-color: yellow;
+    color: blue;
+  }
+
+  div.blue {
+    background-color: blue;
+    color: #fff;
+  }
+
+  .button_part {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "percentage sqr square1 fraction "
+    "add_sub delete_c delete_b divide"
+    "seven eight nine mutiply"
+    "four five six subtr"
+    "one two three addi"
+    "zeroo dott equal addi";
+    grid-gap: 10px;
+    margin: 0 15px;
+  }
+
+    .percentage {
+        grid-area: percentage;
+    }
+    .sqr {
+        grid-area: sqr;
+    }
+    .square1 {
+        grid-area: square1;
+    }
+    .fraction {
+        grid-area: fraction;
+    }
+    .add_sub {
+        grid-area: add_sub;
+    }
+    .delete_c {
+        grid-area: delete_c;
+    }
+    .delete_b {
+        grid-area: delete_b;
+    }
+    .divide {
+        grid-area: divide;
+    }
+    .seven {
+        grid-area: seven;
+    }
+    .eight {
+        grid-area: eight;
+    }
+    .nine {
+        grid-area: nine;
+    }
+    .mutiply {
+        grid-area: mutiply;
+    }
+    .four {
+        grid-area: four;
+    }
+    .five {
+        grid-area: five;
+    }
+    .six {
+        grid-area: six;
+    }
+    .subtr {
+        grid-area: subtr;
+    }
+    .one {
+        grid-area: one;
+    }
+    .two {
+        grid-area: two;
+    }
+    .three {
+        grid-area: three;
+    } 
+    .addi {
+        grid-area: addi;
+    }
+    .zeroo {
+        grid-area: zeroo;
+    }
+    .dott {
+        grid-area: dott;
+    }
+    .equal {
+        grid-area: equal;
+    }

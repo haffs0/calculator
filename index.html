@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body >
+    <section class="main">
+        <div class="display_part">
+            <h1 class="name">Haffs <span style="float: right; font-size: 10px;"><em>Hx-45MS</em></span></h1>
+            <!-- <p style="padding-bottom: 10px; color: #fff;">Calculator</p> -->  
+            <!-- onkeypress="return ()event.charCode >= 48 && event.charCode <= 57) || event.charCode == 0" -->
+            <input id="input" type="text" class="input_value" onkeypress="return validateInput(event)"/>
+        </div>
+        <div class="button_part">
+                <div class="percentage" onclick="smartInput(event)"><span data-value="%" style="font-weight: bold;">%</span></div>
+                <div class="sqr" onclick="smartInput(event)" ><span><i data-value="square root" class="fas fa-square-root-alt"></i></span></div>
+                <div class="square1" onclick="smartInput(event)"><span><i data-value="squares" class="fas fa-superscript"></i></span></div>
+                <div class="fraction" onclick="smartInput(event)"><span data-value="fraction" style="font-weight: bolder;">1/x</span></div>
+                <div class="add_sub" onclick="smartInput(event)"><span data-value="negation" style="font-weight: bolder;">+/-</span></div>
+                <div class="delete_c yellow" onclick="smartInput(event)" ><span data-value="delete">C</span></div>
+                <div class="delete_b yellow" onclick="smartInput(event)"><span><i data-value="backspace" class="fas fa-backspace"></i></span></div>
+                <div class="divide" onclick="smartInput(event)"><span><i data-value="/" class="fas fa-divide"></i></span></div>
+                <div class="seven blue" onclick="smartInput(event)"><span data-value="7">7</span></div>
+                <div class="eight blue" onclick="smartInput(event)" ><span data-value="8">8</span></div>
+                <div class="nine blue" onclick="smartInput(event)" ><span data-value="9">9</span></div>
+                <div class="mutiply" onclick="smartInput(event)"><span><i data-value="*" class="fas fa-times"></i></span></div>
+                <div class="four blue" onclick="smartInput(event)"><span data-value="4">4</span></div>
+                <div class="five blue" onclick="smartInput(event)"><span data-value="5">5</span></div>
+                <div class="six blue" onclick="smartInput(event)"><span data-value="6">6</span></div>
+                <div class="subtr" onclick="smartInput(event)"><span><i data-value="-" class="fas fa-minus"></i></span></div>
+                <div class="one blue" onclick="smartInput(event)"><span data-value="1">1</span></div>
+                <div class="two blue" onclick="smartInput(event)"><span  data-value="2">2</span></div>
+                <div class="three blue"  onclick="smartInput(event)"><span data-value="3">3</span></div>
+                <div class="addi" onclick="smartInput(event)"><span id="add"><i data-value="+" class="fas fa-plus"></i></span></div>
+                <div class="zeroo blue" onclick="smartInput(event)"><span   data-value="0">0</span></div>
+                <div class="dott"  onclick="smartInput(event)" data-value="." ><span id="circle"><i class="fas fa-circle"></i></span></div>	
+                <div class="equal" onclick="smartInput(event)"><span><i data-value="=" class="fas fa-equals"></i></span></div>
+            </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
